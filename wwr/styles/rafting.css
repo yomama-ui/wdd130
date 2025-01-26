@@ -9,6 +9,7 @@
     --text-font: 'Open Sans', sans-serif;
 }
 
+/* GENERAL STYLES */
 body {
     font-family: var(--text-font);
     color: var(--primary-color);
@@ -16,12 +17,13 @@ body {
     padding: 0;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 .logo {
@@ -39,6 +41,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* HERO SECTION */
 .hero {
     position: relative;
     text-align: center;
@@ -69,6 +72,8 @@ nav a:hover {
     padding: 20px;
     color: white;
     border-radius: 10px;
+    text-align: left;
+    width: 60%;
 }
 
 .hero article img {
@@ -78,7 +83,8 @@ nav a:hover {
     border-radius: 50%;
 }
 
-section {
+/* MAIN CONTENT */
+main {
     text-align: center;
     margin: 20px;
     padding: 20px;
@@ -89,12 +95,21 @@ h2 {
     color: var(--secondary-color);
 }
 
-section img {
-    width: 150px;
-    margin: 10px;
+/* GALLERY SECTION */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
     border-radius: 10px;
 }
 
+/* FOOTER */
 footer {
     background-color: var(--primary-color);
     color: white;
@@ -102,12 +117,12 @@ footer {
     padding: 15px;
 }
 
-footer a {
+.social-icons a {
     text-decoration: none;
     margin: 10px;
 }
 
-footer img {
+.social-icons img {
     width: 30px;
     height: 30px;
 }
