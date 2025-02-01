@@ -17,10 +17,10 @@ body {
     padding: 0;
 }
 
-/* HEADER */
+/* HEADER - CSS GRID */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
     align-items: center;
     background-color: var(--primary-color);
     padding: 15px 20px;
@@ -30,10 +30,23 @@ header {
     height: 60px;
 }
 
+h1 {
+    color: white;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+/* NAVIGATION - CSS FLEX */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -95,31 +108,38 @@ h2 {
     color: var(--secondary-color);
 }
 
-/* GALLERY SECTION */
+/* ADVENTURE GALLERY */
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.gallery img {
+.gallery figure {
+    text-align: center;
     width: 200px;
+}
+
+.gallery img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
     padding: 15px;
 }
 
-.social-icons a {
-    text-decoration: none;
-    margin: 10px;
+.social-icons {
+    display: flex;
+    gap: 15px;
 }
 
 .social-icons img {
