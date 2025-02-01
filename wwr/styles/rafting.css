@@ -140,6 +140,7 @@ footer {
 .social-icons {
     display: flex;
     gap: 15px;
+    margin-left: auto;
 }
 
 .social-icons img {
