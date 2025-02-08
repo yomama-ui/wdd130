@@ -17,7 +17,7 @@ body {
     padding: 0;
 }
 
-/* HEADER - CSS GRID */
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
@@ -36,7 +36,7 @@ h1 {
     text-align: center;
 }
 
-/* NAVIGATION - CSS FLEX */
+/* NAVIGATION */
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -52,6 +52,11 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+nav ul li .active {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* HERO SECTION */
@@ -108,6 +113,11 @@ h2 {
     color: var(--secondary-color);
 }
 
+/* HISTORY SECTION */
+.history {
+    margin: 20px;
+}
+
 /* ADVENTURE GALLERY */
 .gallery {
     display: flex;
@@ -125,6 +135,79 @@ h2 {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+/* CONTACT PAGE */
+.contact-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.map-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* EMPLOYEES */
+.employees {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+    text-align: center;
+    width: 200px;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* CONTACT FORM */
+.contact-form {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form fieldset {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
 }
 
 /* FOOTER */
