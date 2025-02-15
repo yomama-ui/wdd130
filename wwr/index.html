@@ -1,37 +1,81 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Gonzalez | WDD 130</title>
-    <meta name="description" content="Ethan Gonzalez's WDD 130 web development portfolio, featuring personal projects and coursework.">
-    <meta name="author" content="Ethan Gonzalez">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Welcome to Whitewater Adventures! Explore thrilling rafting trips, sign up for our newsletter, and book your next adventure.">
+    <meta name="author" content="Your Name">
+    <title>Home - Whitewater Adventures</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+
     <header>
+        <img src="images/logo.png" alt="Whitewater Adventures Logo" class="logo">
+        <h1>Whitewater Adventures</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Introduction Website</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
+
     <main>
-        <h1>Ethan Gonzalez | WDD 130</h1>
-        <img src="images/profile.png" alt="Hey, my name is Ethan Gonzalez">
-        <p>Hey, my name is Ethan Gonzalez and I am aspiring to level up my web development skills. I like playing the guitar and hanging out with friends. My goal this semester is to get my assignments done well before the due date, and I have failed already, but I will not next time.</p>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-image">
+            <h1>Unleash Your Inner Adventurer</h1>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join Our Newsletter</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section class="call-to-action">
+            <h2>Plan Your Next Adventure</h2>
+            <p>Explore our thrilling whitewater rafting trips and book your adventure today.</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
+        </section>
+
+        <section class="grid-content">
+            <h2>Why Choose Whitewater Adventures?</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="images/rafting-01.jpg" alt="Rafting Excitement">
+                    <p>Experience the thrill of the rapids with our expert guides.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/rafting-02.jpg" alt="Scenic River Views">
+                    <p>Enjoy breathtaking scenery as you navigate the river.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <aside>
-        <h2>California, USA</h2>
-        <img src="images/california.jpg" alt="Scenic view of California">
-        <p>California is known for its diverse geography, entertainment industry, and technological innovation. It is home to Silicon Valley, Hollywood, and beautiful national parks.</p>
-    </aside>
 
     <footer>
-        <p>©2025 👌 Ethan Gonzalez 👌 Indio, California</p>
+        <p>&copy; 2025 Whitewater Adventures | Designed by Your Name</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        </div>
     </footer>
+
 </body>
 </html>
-
-
