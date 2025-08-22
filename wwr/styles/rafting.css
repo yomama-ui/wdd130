@@ -1,4 +1,3 @@
-/* CSS Variables */
 :root {
   --primary-color: #004466;
   --accent1-color: #3399cc;
@@ -6,7 +5,6 @@
   --body-font: 'Arial', sans-serif;
 }
 
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -20,38 +18,32 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Page layout container */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* Spacing for key elements */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Header */
+/* Header Grid Layout */
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 16px;
 }
 
+/* Logo */
 header img {
   height: 60px;
 }
 
+/* Nav Flex Layout */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
 nav a {
-  margin: 0 8px;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
@@ -70,7 +62,6 @@ nav a {
   height: auto;
 }
 
-/* Hero heading overlay */
 .hero h1 {
   position: absolute;
   top: 20px;
@@ -83,7 +74,6 @@ nav a {
   font-size: 2rem;
 }
 
-/* Hero article content */
 .hero article {
   position: relative;
   background-color: rgba(255, 255, 255, 0.9);
@@ -100,17 +90,65 @@ nav a {
   border-radius: 4px;
 }
 
-/* Footer */
-footer {
+/* History Section */
+.history {
+  background-color: #f4f4f4;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Adventures Gallery */
+.adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+}
+
+.adventures figure {
+  flex: 1 1 160px;
+  max-width: 160px;
   text-align: center;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.adventures figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Footer Layout */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
   padding: 16px 0;
   border-top: 1px solid #ccc;
-  margin-top: 32px;
+}
+
+footer p {
+  margin-left: 16px;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 16px;
 }
 
 .socialmedia a {
   text-decoration: none;
-  margin: 0 10px;
 }
 
 .socialmedia img {
