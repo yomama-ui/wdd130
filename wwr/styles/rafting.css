@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
   --primary-color: #004466;
   --accent1-color: #3399cc;
@@ -5,6 +6,7 @@
   --body-font: 'Arial', sans-serif;
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +17,11 @@ html, body {
   height: 100%;
   font-family: var(--body-font);
   color: var(--accent1-color);
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
+/* Page Layout */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
@@ -28,7 +32,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 /* Logo */
@@ -47,9 +51,10 @@ nav a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
+  padding: 4px 8px;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
   position: relative;
   min-height: 400px;
@@ -69,8 +74,8 @@ nav a {
   padding: 16px;
   text-align: center;
   background-color: var(--accent1-color);
-  opacity: 0.8;
-  color: #ffffff;
+  color: #fff;
+  opacity: 0.85;
   font-size: 2rem;
 }
 
@@ -80,7 +85,7 @@ nav a {
   padding: 16px;
   margin: 16px;
   border-radius: 6px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero article img {
@@ -88,6 +93,17 @@ nav a {
   width: 125px;
   margin-left: 16px;
   border-radius: 4px;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
 }
 
 /* History Section */
@@ -98,7 +114,7 @@ nav a {
   border-left: 4px solid var(--primary-color);
 }
 
-/* Adventures Gallery */
+/* Adventures Section */
 .adventures {
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +133,7 @@ nav a {
   width: 100%;
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adventures figcaption {
@@ -126,7 +142,94 @@ nav a {
   color: var(--primary-color);
 }
 
-/* Footer Layout */
+/* Contact Info Section */
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 16px;
+  margin: 16px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.map-container {
+  margin-top: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Employees Section */
+.employees {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.employees figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.employees img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employees figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #f2f2f2;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.contact-form button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #003244;
+}
+
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
